@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPORT ZONE — Sport olami</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="#" style="text-decoration: none; color: white"
+          >SPORT<span>ZONE.</span></a
+        >
+        <nav class="navlinks">
+          <a href="#home">Bosh sahifa</a><a href="#catalog">Katalog</a
+          ><a href="#collections">Yo‘nalishlar</a><a href="#deals">Aksiyalar</a
+          ><a href="#reviews">Fikrlar</a><a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="iconbtn" id="favoritesBtn" title="Sevimlilar">
+            ♡ <span id="favCount">0</span></button
+          ><button class="iconbtn" id="cartBtn">
+            🛒 Savat <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> SPORTNI HIS QIL</div>
+          <h1>Chegarani<br />emas, <em>rekordni</em><br />yangila.</h1>
+          <p>
+            Sport bilan shug‘ullanish uchun kerak bo‘lgan hamma narsa bir joyda.
+            Sifatli jihozlar, qulay narxlar va yangi marralar sari ishonchli
+            qadam!
+          </p>
+          <div class="hero-buttons">
+            <a class="primary" href="#catalog" style="text-decoration: none"
+              >Katalogni ko‘rish ↗</a
+            ><button class="secondary" id="popularBtn">
+              🔥 Mashhur mahsulotlar
+            </button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-photo"
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85"
+            alt="Zamonaviy sport zal"
+          />
+          <div class="hero-overlay"></div>
+          <div class="float-tag">YANGI MAVSUM <b>2026</b></div>
+          <div class="hero-label">
+            <small>SPORT ZONE TANLOVI</small>
+            <h2>Kuch. Tezlik. Natija.</h2>
+          </div>
+        </div>
+      </section>
+      <div class="stats">
+        <div class="stat">
+          <strong>100+</strong><span>Sport mahsulotlari</span>
+        </div>
+        <div class="stat"><strong>12</strong><span>Sport yo‘nalishi</span></div>
+        <div class="stat"><strong>24/7</strong><span>Onlayn katalog</span></div>
+        <div class="stat">
+          <strong>100%</strong><span>Sport kayfiyati</span>
+        </div>
+      </div>
+      <section id="catalog">
+        <div class="section-head">
+          <div>
+            <h2>Sport katalogi <span style="color: var(--lime)">.</span></h2>
+            <p>O‘zingizga kerakli mahsulotni toping</p>
+          </div>
+          <span id="resultCount" style="font-size: 12px; color: var(--muted)"
+            >Mahsulotlar yuklanmoqda...</span
+          >
+        </div>
+        <div class="category-row" id="categories"></div>
+        <div class="toolbar">
+          <div class="searchbox">
+            <span>⌕</span
+            ><input
+              id="searchInput"
+              type="search"
+              placeholder="Masalan: futbol to‘pi, krossovka, gantel..."
+            />
+          </div>
+          <select id="sortSelect" aria-label="Saralash">
+            <option value="default">Saralash: tavsiya</option>
+            <option value="low">Narx: arzonidan</option>
+            <option value="high">Narx: qimmatidan</option>
+            <option value="name">Nomi bo‘yicha</option>
+          </select>
+          <select id="priceSelect" aria-label="Narx bo‘yicha filter">
+            <option value="all">Barcha narxlar</option>
+            <option value="100000">100 000 so‘mgacha</option>
+            <option value="300000">300 000 so‘mgacha</option>
+            <option value="600000">600 000 so‘mgacha</option>
+            <option value="1000000">1 000 000 so‘mgacha</option>
+          </select>
+        </div>
+        <div class="products" id="products"></div>
+      </section>
+      <section class="promo">
+        <div>
+          <h2>Yangi maqsadlar sari! ⚡</h2>
+          <p>
+            Sport jihozlarini tanlang va mashg‘ulotlaringizni yangi bosqichga
+            olib chiqing.
+          </p>
+        </div>
+        <a class="primary" href="#catalog" style="text-decoration: none"
+          >Xaridni boshlash →</a
+        >
+      </section>
+      <section id="advantages">
+        <div class="section-head">
+          <div>
+            <h2>Nega SPORT ZONE?</h2>
+            <p>Har bir mashg‘ulot uchun kerakli qulaylik</p>
+          </div>
+        </div>
+        <div class="benefits">
+          <div class="benefit">
+            <div class="emoji">🚚</div>
+            <h3>Qulay yetkazib berish</h3>
+            <p>
+              Buyurtmangizni oson rejalashtiring. Bu demo sayt bo‘lib, buyurtma
+              haqiqiy jo‘natilmaydi.
+            </p>
+          </div>
+          <div class="benefit">
+            <div class="emoji">🏆</div>
+            <h3>Sport uchun tanlov</h3>
+            <p>
+              Futbol, fitnes, yugurish, basketbol va boshqa yo‘nalishlar uchun
+              jihozlar.
+            </p>
+          </div>
+          <div class="benefit">
+            <div class="emoji">💬</div>
+            <h3>Oddiy va qulay</h3>
+            <p>
+              Qidiruv, kategoriya, saralash va savat yordamida kerakli
+              mahsulotni tez toping.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="extra-section" id="collections">
+        <div class="section-head">
+          <div>
+            <h2>
+              Sport yo‘nalishlari <span style="color: var(--lime)">.</span>
+            </h2>
+            <p>Sevimli sporting uchun kerakli jihozlarni tanla</p>
+          </div>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-card" href="#catalog" data-jump-cat="Futbol"
+            ><img
+              src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=80"
+              alt="Futbol"
+            />
+            <div>
+              <strong>⚽ Futbol</strong><span>To‘p, butsalar, forma →</span>
+            </div></a
+          >
+          <a class="collection-card" href="#catalog" data-jump-cat="Fitnes"
+            ><img
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80"
+              alt="Fitnes"
+            />
+            <div>
+              <strong>🏋️ Fitnes</strong
+              ><span>Gantel va mashg‘ulot jihozlari →</span>
+            </div></a
+          >
+          <a class="collection-card" href="#catalog" data-jump-cat="Yugurish"
+            ><img
+              src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=700&q=80"
+              alt="Yugurish"
+            />
+            <div>
+              <strong>🏃 Yugurish</strong
+              ><span>Krossovka va aksessuarlar →</span>
+            </div></a
+          >
+          <a class="collection-card" href="#catalog" data-jump-cat="Basketbol"
+            ><img
+              src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=80"
+              alt="Basketbol"
+            />
+            <div>
+              <strong>🏀 Basketbol</strong
+              ><span>To‘p va sport kiyimlari →</span>
+            </div></a
+          >
+        </div>
+      </section>
+      <section class="extra-section" id="deals">
+        <div class="section-head">
+          <div>
+            <h2>Maxsus takliflar <span style="color: var(--lime)">.</span></h2>
+            <p>Sport kayfiyatingni ko‘taradigan tanlovlar</p>
+          </div>
+        </div>
+        <div class="deal-grid">
+          <div class="deal-card featured">
+            <span class="deal-tag">SPORT ZONE TANLOVI</span>
+            <h3>Yangi maqsadlar.<br />Yangi natijalar.</h3>
+            <p>
+              O‘zingga mos sport jihozini top va mashg‘ulotga ilhom bilan
+              kirish.
+            </p>
+            <a
+              href="#catalog"
+              class="primary"
+              style="
+                display: inline-block;
+                text-decoration: none;
+                background: #101509;
+                color: white;
+                padding: 11px 14px;
+              "
+              >Katalogni ko‘r →</a
+            >
+          </div>
+          <div class="deal-card">
+            <div class="deal-emoji">🎒</div>
+            <h3>Harakatda qulaylik</h3>
+            <p>
+              Sport sumkalari, suv idishlari va kundalik mashg‘ulot uchun
+              aksessuarlar.
+            </p>
+            <span class="deal-tag">AKSESSUARLAR</span>
+          </div>
+          <div class="deal-card">
+            <div class="deal-emoji">👟</div>
+            <h3>Faol kunlar</h3>
+            <p>
+              Yugurish va mashg‘ulot uchun qulay sport kiyimlari hamda
+              poyabzallar.
+            </p>
+            <span class="deal-tag">KIYIM VA OYOQ KIYIMI</span>
+          </div>
+        </div>
+      </section>
+      <section class="extra-section" id="reviews">
+        <div class="section-head">
+          <div>
+            <h2>Sportchilar fikri <span style="color: var(--lime)">.</span></h2>
+            <p>Namoyish uchun yozilgan mijoz fikrlari</p>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>
+              “Mahsulotlarni kategoriya bo‘yicha topish oson. Sayt dizayni ham
+              juda zamonaviy!”
+            </p>
+            <div class="review-person">
+              <div class="review-avatar">A</div>
+              <div>
+                <strong>Aziz</strong><small>Futbol ishqibozi · demo fikr</small>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>
+              “Qidiruv va narx bo‘yicha saralash qulay. Kerakli fitnes jihozini
+              tez topish mumkin.”
+            </p>
+            <div class="review-person">
+              <div class="review-avatar">M</div>
+              <div>
+                <strong>Madina</strong><small>Fitnes muxlisi · demo fikr</small>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>
+              “Turli sport yo‘nalishlari bir joyda jamlangani yoqdi. Telefon
+              orqali ham yaxshi ko‘rinadi.”
+            </p>
+            <div class="review-person">
+              <div class="review-avatar">S</div>
+              <div>
+                <strong>Sardor</strong
+                ><small>Yugurish ishqibozi · demo fikr</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="extra-section" id="faq">
+        <div class="section-head">
+          <div>
+            <h2>Ko‘p so‘raladigan savollar</h2>
+            <p>Saytdan foydalanish bo‘yicha qisqa ma’lumot</p>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Mahsulotni qanday qidiraman?</summary>
+            <p>
+              Katalogdagi qidiruv maydoniga mahsulot nomini yoz. Kategoriyalar
+              va narx filtri bilan natijalarni toraytirishing mumkin.
+            </p>
+          </details>
+          <details>
+            <summary>Savatga mahsulot qanday qo‘shiladi?</summary>
+            <p>
+              Mahsulot kartasidagi “Savatga qo‘shish” tugmasini bos. Savatdagi
+              miqdor va umumiy narx avtomatik yangilanadi.
+            </p>
+          </details>
+          <details>
+            <summary>Bu saytda haqiqiy buyurtma bersa bo‘ladimi?</summary>
+            <p>
+              Hozircha bu namoyish sayti. Savat ishlaydi, ammo to‘lov, yetkazib
+              berish va buyurtma yuborish tizimi ulanmagan.
+            </p>
+          </details>
+          <details>
+            <summary>Mahsulot rasmlari nega ba’zan ko‘rinmaydi?</summary>
+            <p>
+              Rasmlar tashqi manbalardan yuklanadi. Internet aloqasini tekshir
+              yoki biroz kutib sahifani yangila.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="extra-section" id="newsletter">
+        <div class="newsletter">
+          <div>
+            <h2>
+              Sport yangiliklaridan xabardor bo‘l!
+              <span style="color: var(--lime)">✦</span>
+            </h2>
+            <p>
+              Yangiliklar va sport ilhomini olish uchun emailingni yoz.<br />Bu
+              demo forma ma’lumotni serverga yubormaydi.
+            </p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              type="email"
+              id="newsletterEmail"
+              placeholder="email@example.com"
+              required
+              aria-label="Email manzilingiz"
+            /><button class="primary" type="submit">Obuna bo‘lish</button>
+          </form>
+        </div>
+      </section>
+      <div class="contact-strip">
+        <div>
+          <strong>💬 SPORT ZONE yordam markazi</strong
+          ><span>Demo do‘kon · haqiqiy aloqa kanali hali ulanmagan</span>
+        </div>
+        <a class="secondary" href="#catalog" style="text-decoration: none"
+          >Mahsulot tanlash ↗</a
+        >
+      </div>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <div>
+          <strong class="logo"
+            >SPORT<span style="color: var(--lime)">ZONE.</span></strong
+          >
+          <p>Sport — bu hayot tarzi.</p>
+        </div>
+        <div>© 2026 SPORT ZONE · Namoyish uchun veb-sayt</div>
+        <div>
+          <a href="#home" style="color: var(--lime); text-decoration: none"
+            >Yuqoriga ↑</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="toast" id="toast">Savatga qo‘shildi!</div>
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-content">
+        <div class="cart-top">
+          <h2>🛒 Savatingiz</h2>
+          <button class="close" id="closeCart">✕</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-total">Jami: <span id="cartTotal">0 so‘m</span></div>
+        <button class="primary checkout" id="checkoutBtn">
+          Buyurtmani rasmiylashtirish
+        </button>
+        <p style="font-size: 11px; line-height: 1.7; color: var(--muted)">
+          Demo: bu tugma haqiqiy to‘lov yoki buyurtma yubormaydi.
+        </p>
+      </div>
+    </div>
+    <script>
+      const productsData = [
+        [
+          "Futbol to‘pi Pro",
+          "Futbol",
+          189000,
+          "https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Yugurish krossovkasi",
+          "Yugurish",
+          549000,
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+          "HIT",
+        ],
+        [
+          "Sport gantellari 5 kg",
+          "Fitnes",
+          220000,
+          "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Basketbol to‘pi",
+          "Basketbol",
+          210000,
+          "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Yoga gilamchasi",
+          "Yoga",
+          145000,
+          "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport ryukzagi",
+          "Aksessuarlar",
+          275000,
+          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Tennis raketkasi",
+          "Tennis",
+          390000,
+          "https://images.unsplash.com/photo-1617083278399-3a4b1b2d4a2b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Velosiped shlemi",
+          "Velosport",
+          320000,
+          "https://images.unsplash.com/photo-1557803175-2d4f8c0f4a50?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sakrash arqoni",
+          "Fitnes",
+          65000,
+          "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suzish ko‘zoynagi",
+          "Suzish",
+          95000,
+          "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Boks qo‘lqoplari",
+          "Boks",
+          350000,
+          "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Futbol butsalari",
+          "Futbol",
+          620000,
+          "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Basketbol formasi",
+          "Basketbol",
+          280000,
+          "https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Fitnes rezinkalari",
+          "Fitnes",
+          89000,
+          "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suv idishi 1 litr",
+          "Aksessuarlar",
+          55000,
+          "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport qo‘l soati",
+          "Aksessuarlar",
+          450000,
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Badminton to‘plami",
+          "Badminton",
+          240000,
+          "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Trekking tayoqchalari",
+          "Sayohat",
+          310000,
+          "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport futbolkasi",
+          "Kiyim",
+          175000,
+          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport shimlari",
+          "Kiyim",
+          230000,
+          "https://images.unsplash.com/photo-1506629905607-d9a2d6a2a6a4?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Tizza himoyasi",
+          "Aksessuarlar",
+          115000,
+          "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Turnik uchun qo‘lqop",
+          "Fitnes",
+          125000,
+          "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Voleybol to‘pi",
+          "Voleybol",
+          195000,
+          "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Futbol darvozaboni qo‘lqopi",
+          "Futbol",
+          260000,
+          "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport sumkasi",
+          "Aksessuarlar",
+          290000,
+          "https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Massaj roligi",
+          "Fitnes",
+          135000,
+          "https://images.unsplash.com/photo-1599058917212-d750089bc07b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Tennis to‘plari (3 dona)",
+          "Tennis",
+          78000,
+          "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport kepkasi",
+          "Kiyim",
+          99000,
+          "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Velosiped qo‘lqopi",
+          "Velosport",
+          160000,
+          "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yoga bloklari",
+          "Yoga",
+          85000,
+          "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Kompression paypoq",
+          "Yugurish",
+          70000,
+          "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Boks bandaji",
+          "Boks",
+          45000,
+          "https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Futbol shinasi",
+          "Futbol",
+          180000,
+          "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Futbol hakami hushtagi",
+          "Futbol",
+          35000,
+          "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Futbol paypoqlari",
+          "Futbol",
+          65000,
+          "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Futbol mashg‘ulot konuslari",
+          "Futbol",
+          75000,
+          "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Mini futbol darvozasi",
+          "Futbol",
+          420000,
+          "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Futbol to‘pi Premium",
+          "Futbol",
+          320000,
+          "https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Basketbol halqasi",
+          "Basketbol",
+          490000,
+          "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Basketbol tizzaliklari",
+          "Basketbol",
+          120000,
+          "https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Basketbol shortigi",
+          "Basketbol",
+          185000,
+          "https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Voleybol tizzaliklari",
+          "Voleybol",
+          110000,
+          "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Voleybol to‘ri",
+          "Voleybol",
+          350000,
+          "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Badminton raketkasi",
+          "Badminton",
+          165000,
+          "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Badminton volani (6 dona)",
+          "Badminton",
+          55000,
+          "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Tennis bilakbog‘i",
+          "Tennis",
+          45000,
+          "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Tennis raketkasi Pro",
+          "Tennis",
+          560000,
+          "https://images.unsplash.com/photo-1617083278399-3a4b1b2d4a2b?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Suzish qalpog‘i",
+          "Suzish",
+          45000,
+          "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suzish uchun quloq tiqini",
+          "Suzish",
+          30000,
+          "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suzish taxtachasi",
+          "Suzish",
+          85000,
+          "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Fitnes gantellari 2 kg",
+          "Fitnes",
+          95000,
+          "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Fitnes gantellari 10 kg",
+          "Fitnes",
+          390000,
+          "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Kettlebell 8 kg",
+          "Fitnes",
+          260000,
+          "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Qorin pressi g‘ildiragi",
+          "Fitnes",
+          90000,
+          "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Turnik eshik uchun",
+          "Fitnes",
+          280000,
+          "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Push-up tayanchlari",
+          "Fitnes",
+          75000,
+          "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport qo‘lqopi",
+          "Fitnes",
+          85000,
+          "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Og‘ir atletika kamari",
+          "Fitnes",
+          195000,
+          "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yoga tasmasi",
+          "Yoga",
+          65000,
+          "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yoga g‘ildiragi",
+          "Yoga",
+          180000,
+          "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yoga paypoqlari",
+          "Yoga",
+          55000,
+          "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Pilates to‘pi",
+          "Yoga",
+          75000,
+          "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yugurish bel sumkasi",
+          "Yugurish",
+          115000,
+          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yugurish qo‘l fonari",
+          "Yugurish",
+          90000,
+          "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yugurish ko‘zoynagi",
+          "Yugurish",
+          145000,
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Sport paypoqlari 3 juft",
+          "Yugurish",
+          60000,
+          "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yengil sport krossovkasi",
+          "Yugurish",
+          480000,
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Boks bosh himoyasi",
+          "Boks",
+          290000,
+          "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Boks qopqog‘i",
+          "Boks",
+          750000,
+          "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Boks sakrash arqoni",
+          "Boks",
+          85000,
+          "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport polo futbolkasi",
+          "Kiyim",
+          160000,
+          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Termo sport ichki kiyimi",
+          "Kiyim",
+          245000,
+          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yengil sport kurtkasi",
+          "Kiyim",
+          390000,
+          "https://images.unsplash.com/photo-1506629905607-d9a2d6a2a6a4?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Sport shortigi",
+          "Kiyim",
+          145000,
+          "https://images.unsplash.com/photo-1506629905607-d9a2d6a2a6a4?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Bel uchun sport sumkasi",
+          "Aksessuarlar",
+          105000,
+          "https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sochiq sport uchun",
+          "Aksessuarlar",
+          55000,
+          "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Shaker 700 ml",
+          "Aksessuarlar",
+          75000,
+          "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suv idishi 750 ml",
+          "Aksessuarlar",
+          65000,
+          "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport quloqchin g‘ilofi",
+          "Aksessuarlar",
+          95000,
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Velosiped chirog‘i",
+          "Velosport",
+          125000,
+          "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Velosiped qulf",
+          "Velosport",
+          90000,
+          "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Velosiped nasosi",
+          "Velosport",
+          115000,
+          "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Velosiped suv idishi ushlagichi",
+          "Velosport",
+          65000,
+          "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Trekking ryukzagi",
+          "Sayohat",
+          420000,
+          "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sayohat suv idishi",
+          "Sayohat",
+          95000,
+          "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Yengil yomg‘irpo‘sh",
+          "Sayohat",
+          275000,
+          "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport ko‘zoynagi",
+          "Aksessuarlar",
+          135000,
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Massaj to‘pi",
+          "Fitnes",
+          45000,
+          "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Elastik tizza bandaji",
+          "Aksessuarlar",
+          85000,
+          "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport belbog‘i",
+          "Aksessuarlar",
+          95000,
+          "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport kepkasi qora",
+          "Kiyim",
+          110000,
+          "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport ryukzagi katta",
+          "Aksessuarlar",
+          360000,
+          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Futbolka nafas oluvchi mato",
+          "Kiyim",
+          195000,
+          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Qo‘l bilak bog‘ichi",
+          "Aksessuarlar",
+          35000,
+          "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Mashg‘ulot kundaligi",
+          "Aksessuarlar",
+          65000,
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport taymeri",
+          "Aksessuarlar",
+          180000,
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport massaj pistoleti",
+          "Fitnes",
+          590000,
+          "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Qo‘l kuchaytirgich",
+          "Fitnes",
+          55000,
+          "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sakrash qutisi uchun mat",
+          "Fitnes",
+          210000,
+          "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Futbol hakami bayroqlari",
+          "Futbol",
+          85000,
+          "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Basketbol paypoqlari",
+          "Basketbol",
+          65000,
+          "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sport bandana",
+          "Kiyim",
+          45000,
+          "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Krossovka bog‘ichlari",
+          "Yugurish",
+          25000,
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Tennis to‘ri",
+          "Tennis",
+          280000,
+          "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=700&q=80",
+          "NEW",
+        ],
+        [
+          "Tennis raketkasi boshlang‘ich",
+          "Tennis",
+          245000,
+          "https://images.unsplash.com/photo-1617083278399-3a4b1b2d4a2b?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suzish uchun burun qisqichi",
+          "Suzish",
+          35000,
+          "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Suzish taxtachasi Pro",
+          "Suzish",
+          125000,
+          "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Badminton to‘ri",
+          "Badminton",
+          195000,
+          "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Badminton raketkasi Pro",
+          "Badminton",
+          295000,
+          "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Badminton sport sumkasi",
+          "Badminton",
+          135000,
+          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Voleybol tarmog‘i ustunlari",
+          "Voleybol",
+          420000,
+          "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Voleybol to‘pi Pro",
+          "Voleybol",
+          275000,
+          "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=700&q=80",
+          "TOP",
+        ],
+        [
+          "Voleybol formasi",
+          "Voleybol",
+          220000,
+          "https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sayohat fonari",
+          "Sayohat",
+          115000,
+          "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sayohat termosi",
+          "Sayohat",
+          145000,
+          "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+        [
+          "Sayohat bel sumkasi",
+          "Sayohat",
+          99000,
+          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+          "",
+        ],
+      ].map((p, i) => ({
+        id: i + 1,
+        name: p[0],
+        cat: p[1],
+        price: p[2],
+        img: p[3],
+        tag: p[4],
+      }));
+      const money = (n) => new Intl.NumberFormat("uz-UZ").format(n) + " so‘m";
+      let activeCategory = "Barchasi",
+        cart = [],
+        favorites = new Set(),
+        onlyFav = false;
+      const productsEl = document.getElementById("products");
+      const categoryNames = [
+        "Barchasi",
+        ...new Set(productsData.map((p) => p.cat)),
+      ];
+      const categoriesEl = document.getElementById("categories");
+      categoryNames.forEach((name, i) => {
+        const b = document.createElement("button");
+        b.className = "cat-btn" + (i === 0 ? " active" : "");
+        b.textContent = name;
+        b.onclick = () => {
+          activeCategory = name;
+          document
+            .querySelectorAll(".cat-btn")
+            .forEach((x) => x.classList.toggle("active", x === b));
+          renderProducts();
+        };
+        categoriesEl.appendChild(b);
+      });
+      function renderProducts() {
+        const q = document
+          .getElementById("searchInput")
+          .value.trim()
+          .toLocaleLowerCase("uz");
+        let list = productsData.filter(
+          (p) =>
+            (activeCategory === "Barchasi" || p.cat === activeCategory) &&
+            (!onlyFav || favorites.has(p.id)) &&
+            (!q ||
+              (p.name + " " + p.cat).toLocaleLowerCase("uz").includes(q)) &&
+            (document.getElementById("priceSelect").value === "all" ||
+              p.price <= Number(document.getElementById("priceSelect").value)),
+        );
+        const sort = document.getElementById("sortSelect").value;
+        if (sort === "low") list.sort((a, b) => a.price - b.price);
+        if (sort === "high") list.sort((a, b) => b.price - a.price);
+        if (sort === "name")
+          list.sort((a, b) => a.name.localeCompare(b.name, "uz"));
+        document.getElementById("resultCount").textContent =
+          list.length + " ta mahsulot";
+        productsEl.innerHTML = "";
+        if (!list.length) {
+          productsEl.innerHTML =
+            '<div class="empty"><b>😕 Mahsulot topilmadi</b>Boshqa so‘z bilan qidirib ko‘ring yoki filtrlarni o‘zgartiring.</div>';
+          return;
+        }
+        list.forEach((p, i) => {
+          const card = document.createElement("article");
+          card.className = "product";
+          card.style.animationDelay = (i % 8) * 0.035 + "s";
+          card.innerHTML = `<div class="product-img"><img loading="lazy" src="${p.img}" alt="${p.name}" onerror="this.src='https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80'">${p.tag ? `<span class="tag">${p.tag}</span>` : ""}<button class="fav ${favorites.has(p.id) ? "active" : ""}" aria-label="Sevimlilarga qo‘shish" data-fav="${p.id}">${favorites.has(p.id) ? "♥" : "♡"}</button></div><div class="product-info"><div class="category-label">${p.cat}</div><h3>${p.name}</h3><div class="rating">★★★★★ <span style="color:var(--muted)"> (4.8)</span></div><div class="price-row"><div class="price">${money(p.price)}</div></div><button class="add-btn" data-add="${p.id}">＋ Savatga qo‘shish</button></div>`;
+          productsEl.appendChild(card);
+        });
+        productsEl
+          .querySelectorAll("[data-add]")
+          .forEach((b) => (b.onclick = () => addToCart(Number(b.dataset.add))));
+        productsEl.querySelectorAll("[data-fav]").forEach(
+          (b) =>
+            (b.onclick = () => {
+              const id = Number(b.dataset.fav);
+              favorites.has(id) ? favorites.delete(id) : favorites.add(id);
+              document.getElementById("favCount").textContent = favorites.size;
+              renderProducts();
+            }),
+        );
+      }
+      function addToCart(id) {
+        const item = cart.find((x) => x.id === id);
+        if (item) item.qty++;
+        else cart.push({ id, qty: 1 });
+        updateCart();
+        showToast("Mahsulot savatga qo‘shildi!");
+      }
+      function updateCart() {
+        document.getElementById("cartCount").textContent = cart.reduce(
+          (s, x) => s + x.qty,
+          0,
+        );
+        document.getElementById("cartItems").innerHTML = cart.length
+          ? cart
+              .map((x) => {
+                const p = productsData.find((y) => y.id === x.id);
+                return `<div class="cart-item"><img src="${p.img}" alt=""><div class="cart-item-info"><strong>${p.name} × ${x.qty}</strong><span>${money(p.price * x.qty)}</span></div><button class="remove" data-remove="${p.id}">O‘chirish</button></div>`;
+              })
+              .join("")
+          : '<div class="empty" style="margin-top:20px"><b>Savatingiz bo‘sh</b>Mahsulot tanlash uchun katalogga qayting.</div>';
+        document.getElementById("cartTotal").textContent = money(
+          cart.reduce(
+            (s, x) => s + productsData.find((p) => p.id === x.id).price * x.qty,
+            0,
+          ),
+        );
+        document.querySelectorAll("[data-remove]").forEach(
+          (b) =>
+            (b.onclick = () => {
+              cart = cart.filter((x) => x.id !== Number(b.dataset.remove));
+              updateCart();
+            }),
+        );
+      }
+      let toastTimer;
+      function showToast(msg) {
+        const t = document.getElementById("toast");
+        t.textContent = msg;
+        t.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => t.classList.remove("show"), 2200);
+      }
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", renderProducts);
+      document
+        .getElementById("sortSelect")
+        .addEventListener("change", renderProducts);
+      document
+        .getElementById("priceSelect")
+        .addEventListener("change", renderProducts);
+      document.getElementById("cartBtn").onclick = () =>
+        document.getElementById("cartPanel").classList.add("open");
+      document.getElementById("closeCart").onclick = () =>
+        document.getElementById("cartPanel").classList.remove("open");
+      document.getElementById("cartPanel").onclick = (e) => {
+        if (e.target.id === "cartPanel")
+          e.currentTarget.classList.remove("open");
+      };
+      document.getElementById("checkoutBtn").onclick = () =>
+        showToast(
+          cart.length
+            ? "Bu demo sayt: haqiqiy buyurtma yuborilmadi."
+            : "Avval savatga mahsulot qo‘shing.",
+        );
+      document.getElementById("favoritesBtn").onclick = () => {
+        onlyFav = !onlyFav;
+        document.getElementById("favoritesBtn").style.borderColor = onlyFav
+          ? "var(--lime)"
+          : "var(--line)";
+        document
+          .getElementById("catalog")
+          .scrollIntoView({ behavior: "smooth" });
+        renderProducts();
+        showToast(onlyFav ? "Sevimli mahsulotlar" : "Barcha mahsulotlar");
+      };
+      document.getElementById("popularBtn").onclick = () => {
+        activeCategory = "Barchasi";
+        onlyFav = false;
+        document.getElementById("searchInput").value = "";
+        document.getElementById("sortSelect").value = "default";
+        document.getElementById("priceSelect").value = "all";
+        document
+          .querySelectorAll(".cat-btn")
+          .forEach((x, i) => x.classList.toggle("active", i === 0));
+        renderProducts();
+        document
+          .getElementById("catalog")
+          .scrollIntoView({ behavior: "smooth" });
+      };
+
+      document.querySelectorAll("[data-jump-cat]").forEach((a) =>
+        a.addEventListener("click", () => {
+          const cat = a.dataset.jumpCat;
+          activeCategory = categoryNames.includes(cat) ? cat : "Barchasi";
+          onlyFav = false;
+          document
+            .querySelectorAll(".cat-btn")
+            .forEach((b) =>
+              b.classList.toggle("active", b.textContent === activeCategory),
+            );
+          renderProducts();
+        }),
+      );
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          showToast("Rahmat! Bu demo forma, ma’lumot yuborilmadi.");
+          e.currentTarget.reset();
+        });
+      renderProducts();
+      updateCart();
+    </script>
+  </body>
+</html>
